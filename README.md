@@ -6,7 +6,15 @@
 
 
 ## ตัวอย่าง
+```html
+<!-- ตัวอย่างฟรอมใส่ลิงค์ True Money Gift -->
+<form action="" method="post">
+    <input type="text" name="link" id="link" placeholder="ใส่ลิงค์" require>
+    <button type="submit">เติม</button>
+</form>
+```
 ```php
+// ตัวอย่างรับค่าลิงค์
     if(isset($_POST['link'])){
         include (__DIR__. '/class/tm.php');
         $tmgift = new VoucherCode();
