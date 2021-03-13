@@ -18,6 +18,7 @@
     if(isset($_POST['link'])){
         include (__DIR__. '/class/tm.php');
         $tmgift = new VoucherCode();
+        //                                ใส่เบอร์โทร        รับค่าลิงค์
         $request = $tmgift->VoucherCode('06XXXXXXXX', $_POST['link']);
         echo $request['message'];
     }
